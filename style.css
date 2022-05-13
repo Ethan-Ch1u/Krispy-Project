@@ -1,0 +1,21 @@
+.nav_title{
+  font-family: "Courier New";
+  margin-left: 5px;
+  font-size:28px;
+}
+.nav-item{
+  font-size:20px;
+  margin-right: 6px;
+  font-family: "Courier New";
+
+}
+.active{
+  font-weight:1000;
+}
+body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
