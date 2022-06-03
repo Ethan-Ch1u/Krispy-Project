@@ -1,0 +1,26 @@
+html,body{
+   height:100%;
+}
+.carousel,.item,.active{
+   height:100%;
+ }
+.carousel-inner{
+    height:100%;
+}
+.nav_title{
+  font-family: "Courier New";
+  margin-left: 5px;
+  font-size:28px;
+}
+.nav-item{
+  font-size:20px;
+  margin-right: 6px;
+  font-family: "Courier New";
+}
+.active{
+  font-weight:1000;
+}
+.carousel-item{
+  font-family:Bradley Hand, cursive;
+
+;}

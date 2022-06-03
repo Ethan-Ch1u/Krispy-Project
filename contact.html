@@ -9,10 +9,49 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <meta charset="utf-8">
   <title>About</title>
+  <script>
+    //This function clears the starting text in the name box.
+    function clearName() {
+      if (document.getElementById('nameField').value == 'First and Last Name') {
+        document.getElementById('nameField').value = '';
+      }
+    }
+    // This function clears the starting text in the phone number box.
+    function clearNumber() {
+      if (document.getElementById('phoneField').value == 'example: 212-123-1234') {
+        document.getElementById('phoneField').value = '';
+      }
+    }
+    // This function to bring back default text if name field is empty.
+    function resetName() {
+      if (document.getElementById('nameField').value == '') {
+        document.getElementById('nameField').value = 'First and Last Name';
+      }
+    }
+    // This function to bring back default text if phone field is empty.
+    function resetNumber() {
+      if (document.getElementById('phoneField').value == '') {
+        document.getElementById('phoneField').value = 'example: 212-123-1234';
+      }
+    }
+    //This function clears the starting text in the email field.
+    function clearEmail() {
+      if (document.getElementById('emailField').value == 'example: asianjs@gmail.com') {
+        document.getElementById('emailField').value = '';
+      }
+    }
+    // This function to bring back default text if email field is empty.
+    function resetEmail() {
+      if (document.getElementById('emailField').value == '') {
+        document.getElementById('emailField').value = 'example: asianjs@gmail.com';
+      }
+    }
+  </script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:black">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="images\komets logo variants 2 copy.png" alt="" width="75" height="35" class="d-inline-block align-text-top" />
@@ -39,20 +78,42 @@
       </div>
     </div>
   </nav>
+
   <div class="container">
     <div class="card border-0 shadow my-5">
       <div class="card-body p-5">
         <div class="container">
+
           <div class="row">
             <center>
               <h1 class="fw-light">Contact Us</h1>
             </center>
           </div>
+          <div class="container">
+            <main role="main">
+              <div class="contentWrapper">
+                <form action="" method="post" name="signUpForm" id="signUpForm">
+                  <fieldset id="signUp">
+                    <label for="nameField">Name:</label>
+                    <input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+
+                    <label for="phoneField">Phone:</label>
+                    <input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234" onFocus="clearNumber();" onBlur="resetNumber();">
+
+                    <label for="emailField">Email:</label>
+                    <input id="emailField" name="emailField" type="text" class="textfield" value="example: asianjs@gmail.com" onFocus="clearEmail();" onBlur="resetEmail();">
+
+                    <input id="submit" class="button-74 mt-3" type="submit" name="submit" value="Nerds! Click This!">
+                  </fieldset>
+                </form>
+              </div>
+            </main>
+          </div>
           <center>
-            <div class="row">
+            <div class="row mt-5">
               <div class="col">
                 <h4>Phone Number</h4>
-                <p class = "mt-4">267-688-7230</p>
+                <p class="mt-4">267-688-7230</p>
                 <p>215-685-0160</p>
               </div>
               <div class="col">
@@ -64,13 +125,13 @@
                 <p>Carousel House</p>
                 <p>4300 Avenue of the Republic</p>
                 <p>Philadelphia, PA 19131</p>
-                  </div>
+              </div>
             </div>
             <div class="row">
               <center>
                 <h3>Social Media Links</h3>
-                  <img src="images\2.png" class="img-fluid p-4" alt="Facebook link">
-                  <img src="images\1.png" class="img-fluid p-4" alt="Instagram link">
+                <img src="images\2.png" class="img-fluid p-4" alt="Facebook link">
+                <img src="images\1.png" class="img-fluid p-4" alt="Instagram link">
               </center>
             </div>
           </center>
