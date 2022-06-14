@@ -24,3 +24,8 @@ html,body{
   font-family:Bradley Hand, cursive;
 
 ;}
+.responsive {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
